@@ -24,7 +24,7 @@
   font-size: 14px;
   border-radius: 10px;
   color: white;
-  background-color: #6a7dfbdf;
+  background-color: rgb(139, 224, 163);
   margin-top: 10px;
   padding: 10px 20px;
   border: none;
@@ -33,6 +33,6 @@
 }
 
 .submitBtn:hover {
-  background-color: #485ff6df;
+  background-color: rgb(16, 128, 47);
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
