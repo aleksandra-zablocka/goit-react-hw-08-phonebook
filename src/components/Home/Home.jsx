@@ -13,14 +13,19 @@ const Home = () => {
       </div>
       <div className={css.phones}>
         <div className={css.phone1}>
-          <div className={css.details1}>Add Contact</div>
+          <div className={css.details1}><h3>Add Contact</h3></div>
+          <br />
           <p>Name</p>
           <p>Number</p>
+          <button>Add</button>
         </div>
         <div className={css.phone2}>
-          <div className={css.details2}>Contact List</div>
+          <div className={css.details2}><h3>Contact List</h3></div>
           <p>Anastasia</p>
           <p>Anna</p>
+          <p>Michael</p>
+          <p>Oscar</p>
+          <p>Zack</p>
         </div>
       </div>
     </div>

@@ -29,7 +29,7 @@ const Form = () => {
 
   return (
     <div>
-      <h2>Phonebook</h2>
+      <h2>Add Contact</h2>
       <form onSubmit={handleSubmit} className={css.form}>
         <input
           className={css.input}
@@ -48,7 +48,7 @@ const Form = () => {
           onChange={handleChangeInput}
         />
         <button className={css.submitBtn} type="submit">
-          Add contact
+          Add
         </button>
       </form>
     </div>

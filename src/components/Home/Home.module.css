@@ -43,33 +43,36 @@ button:hover {
 }
 
 .phones {
-  margin-top: 30px;
+  margin-top: 60px;
+  margin-bottom: 20px;
   display: flex;
   gap: 40px;
 }
 
 .phone1 {
-  border: double green;
+  border: double green 4px;
   color: white;
   text-align: center;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   font-size: 14px;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: white;
   width: 150px;
   height: 250px;
   transform: rotate(-10deg);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .phone2 {
-  border: double white;
+  border: double white 4px;
   text-align: center;
   font-size: 14px;
-  border-radius: 10px;
-  background-color: rgb(16, 128, 47);
+  border-radius: 15px;
+  background-color: rgba(16, 128, 48, 0.792);
   width: 150px;
   height: 250px;
   transform: rotate(-10deg);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .phone2 > p {
@@ -77,20 +80,30 @@ button:hover {
 }
 
 .details1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: rgb(16, 128, 47);
+  background-color: rgba(16, 128, 48, 0.792);
   width: 150px;
   height: 30%;
 }
 
 .details2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: rgb(16, 128, 47);
   font-size: 14px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   background-color: white;
   width: 150px;
   height: 30%;
+}
+
+h3 {
+  font-size: 15px;
 }
