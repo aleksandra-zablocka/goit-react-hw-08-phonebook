@@ -1,6 +1,8 @@
 import { React } from 'react';
 import { useDispatch } from 'react-redux';
 import css from './RegistrationForm.module.css';
+import { register } from 'redux/auth/operations';
+import toast from 'react-hot-toast';
 
 const RegistrationForm = () => {
   const dispatch = useDispatch();
@@ -8,8 +10,28 @@ const RegistrationForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.currentTarget;
-    dispatch();
-    //TODO: add function
+    if (form.elements.password.value !== form.elements.passwordRepeated.value) {
+      toast.error('Please repeat the same password');
+      return;
+    }
+
+    // const password = form.elements.password.value;
+    // const hasUpperCase = /[A-Z]/.test(password);
+    // const hasDigit = /[0-9]/.test(password);
+    // const hasSpecialChar = /[!@#$%^&*()+=._-]/.test(password);
+
+    // if (password.length < 6 || !hasUpperCase || !hasDigit || !hasSpecialChar) {
+    //   toast.error('Please enter correct password');
+    //   return;
+    // }
+
+    dispatch(
+      register({
+        name: form.elements.name.value,
+        email: form.elements.email.value,
+        password: form.elements.password.value,
+      })
+    );
     form.reset();
   };
 
@@ -29,9 +51,9 @@ const RegistrationForm = () => {
       </label>
       <label className={css.label}>
         Repeat Password
-        <input className={css.input} type="password" name="password" />
+        <input className={css.input} type="password" name="passwordRepeated" />
       </label>
-      <div className={css.requirements}>
+      {/* <div className={css.requirements}>
         <ul>
           <b>Password must contain at least:</b>
           <li>6 characters</li>
@@ -40,8 +62,10 @@ const RegistrationForm = () => {
           <li>one digit (number)</li>
           <li>one special character (e.g., !@#$%)</li>
         </ul>
-      </div>
-      <button type="submit">Register</button>
+      </div> */}
+      <button className={css.btnRegister} type="submit">
+        Register
+      </button>
     </form>
   );
 };

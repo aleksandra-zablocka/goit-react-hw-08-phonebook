@@ -19,10 +19,10 @@ const Home = () => {
             </p>
             <div className={css.buttons}>
               <Link to="/login">
-                <button>Log In</button>
+                <button className={css.btnHome}>Log In</button>
               </Link>
               <Link to="/register">
-                <button>Register</button>
+                <button className={css.btnHome}>Register</button>
               </Link>
             </div>
             <div className={css.phones}>
@@ -33,7 +33,7 @@ const Home = () => {
                 <br />
                 <p>Name</p>
                 <p>Number</p>
-                <button>Add</button>
+                <button className={css.btnHome}>Add</button>
               </div>
               <div className={css.phone2}>
                 <div className={css.details2}>
