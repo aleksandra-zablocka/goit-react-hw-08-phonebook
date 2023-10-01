@@ -1,9 +1,9 @@
-import { useDispatch } from 'react-redux';
+// import { useDispatch } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import ContactList from 'components/ContactList/ContactList';
 
 const Contacts = () => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   return (
     <div>
