@@ -17,17 +17,30 @@ const RegistrationForm = () => {
     <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
       <label className={css.label}>
         Username
-        <input type="text" name="name" />
+        <input className={css.input} type="text" name="name" />
       </label>
       <label className={css.label}>
         Email
-        <input type="email" name="email" />
+        <input className={css.input} type="email" name="email" />
       </label>
       <label className={css.label}>
         Password
-        <input type="password" name="password" />
+        <input className={css.input} type="password" name="password" />
       </label>
-      <p>Password must contain...</p>
+      <label className={css.label}>
+        Repeat Password
+        <input className={css.input} type="password" name="password" />
+      </label>
+      <div className={css.requirements}>
+        <ul>
+          <b>Password must contain at least:</b>
+          <li>6 characters</li>
+          <li>one uppercase letter</li>
+          <li>one lowercase letter</li>
+          <li>one digit (number)</li>
+          <li>one special character (e.g., !@#$%)</li>
+        </ul>
+      </div>
       <button type="submit">Register</button>
     </form>
   );

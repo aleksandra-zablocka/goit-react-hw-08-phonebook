@@ -1,9 +1,49 @@
 .form {
-    width: 320px;
+  margin: 40px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .label {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+  color: rgb(16, 128, 47);
+}
+
+.input {
+  margin-top: 5px;
+  width: 90%;
+  padding: 3px;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  width: 300px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.input:hover {
+  border: 1px solid rgb(16, 128, 47);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  font-size: 14px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(139, 224, 163);
+  margin-top: 10px;
+  padding: 6px 20px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: rgb(16, 128, 47);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
