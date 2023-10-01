@@ -1,7 +1,8 @@
-import css from './Form.module.css';
+import css from './ContactForm.module.css';
 import { useState } from 'react';
+import toast from 'react-hot-toast';
 import { useDispatch } from 'react-redux';
-import { addContact } from 'redux/operations/operations';
+import { addContact } from 'redux/contacts/operations';
 
 const Form = () => {
   const dispatch = useDispatch();
@@ -16,6 +17,9 @@ const Form = () => {
     if (contact.name && contact.number) {
       dispatch(addContact({ name: contact.name, phone: contact.number }));
       setContact({ name: '', number: '' });
+    } else {
+      toast.error('Please add name and number of your contact');
+      return;
     }
   };
 

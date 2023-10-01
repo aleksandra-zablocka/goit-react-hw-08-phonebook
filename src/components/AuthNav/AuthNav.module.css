@@ -1,12 +1,18 @@
 .link {
-    display: inline-block;
-    text-decoration: none;
-    padding: 12px;
-    font-weight: 700;
-    color: rgba(12, 107, 39, 0.975);
+  display: inline-block;
+  text-decoration: none;
+  align-items: center;
+  padding: 12px;
+  font-weight: 700;
+  color: rgba(12, 107, 39, 0.975);
+  transition: color 0.3s;
 }
 
 .link.active {
-    color: rgba(16, 128, 48, 0.792);
-    background-color: white;
+  color: rgba(12, 107, 39, 0.975);
+  background-color: white;
+}
+
+.link:hover {
+  color: rgb(139, 224, 163);
 }

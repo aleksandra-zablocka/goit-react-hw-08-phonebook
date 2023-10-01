@@ -5,7 +5,7 @@
   justify-content: space-between;
 }
 
-.removeBtn {
+.deleteBtn {
   font-size: 10px;
   border-radius: 7px;
   color: white;
@@ -16,7 +16,7 @@
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.removeBtn:hover {
+.deleteBtn:hover {
   background-color: rgb(16, 128, 47);
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }

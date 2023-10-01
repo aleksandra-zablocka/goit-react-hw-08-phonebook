@@ -3,6 +3,8 @@ import { useDispatch } from 'react-redux';
 import { useAuth } from 'hooks/useAuth';
 import { logOut } from 'redux/auth/operations';
 
+import { ReactComponent as SwitchIcon } from 'images/switch.svg';
+
 export const UserMenu = () => {
   const dispatch = useDispatch();
   const { user } = useAuth();
@@ -13,8 +15,9 @@ export const UserMenu = () => {
     <div className={css.wrapper}>
       <p className={css.username}>Welcome, {user.name}</p>
       <button type="button" onClick={handleLogOut}>
-        Log out
-      </button>
+      <SwitchIcon className={css.logoutIcon}/>
+           </button>
     </div>
   );
 };
+
