@@ -30,7 +30,7 @@ const LoginForm = () => {
         <input className={css.input} type="password" name="password" />
       </label>
       <button className={css.btnLogin} type="submit">
-        Log in
+        Log In
       </button>
     </form>
   );

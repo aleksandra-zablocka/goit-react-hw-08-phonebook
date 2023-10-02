@@ -16,7 +16,7 @@ useEffect(() => {
   return (
     <div>
     <Helmet>
-      <title>Your contacts</title>
+      <title>Your Contacts</title>
     </Helmet>
     <Form />
     <ContactList/>
