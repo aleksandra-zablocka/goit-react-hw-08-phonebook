@@ -28,8 +28,11 @@ const Home = () => {
         <div className={css.phones}>
           <div className={css.phone1}>
             <div className={css.details1}>
-              <h3><AddContactIcon className={css.addIcon} />Add Contact</h3>
-                          </div>
+              <h3>
+                <AddContactIcon className={css.addIcon} />
+                Add Contact
+              </h3>
+            </div>
             <br />
             <p>Name</p>
             <p>Number</p>
@@ -37,7 +40,10 @@ const Home = () => {
           </div>
           <div className={css.phone2}>
             <div className={css.details2}>
-              <h3><Contacts className={css.contactsIcon} />Contact List</h3>
+              <h3>
+                <Contacts className={css.contactsIcon} />
+                Contact List
+              </h3>
             </div>
             <p>Anastasia</p>
             <p>Anna</p>
