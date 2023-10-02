@@ -3,9 +3,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+  }
 
 .deleteBtn {
+  margin-right: 20px;
   font-size: 10px;
   border-radius: 7px;
   color: white;
@@ -21,7 +22,20 @@
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-p {
-  font-size: 12px;
+.contactInfo {
+    font-size: 12px;
   margin: 0;
+}
+
+.phoneIcon {
+  fill: rgb(139, 224, 163);
+  border: none;
+  cursor: pointer;
+  width: 15px;
+  transition: fill 0.3s;
+  margin-left: 20px;
+}
+
+.phoneIcon:hover {
+  fill: rgb(16, 128, 47);
 }

@@ -1,8 +1,12 @@
 @import-normalize; /* bring in normalize.css styles */
 
 body {
-  background-color: #9bedb37d;
-  margin: 0;
+  height: 100vh;
+  /* background-color: #9bedb37d; */
+  /* background: linear-gradient(to bottom, #86f9a89f, #0fb346b1); */
+  background: linear-gradient(to bottom, #86f9a863, #0fb34693);
+  background-attachment: fixed; 
+    margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

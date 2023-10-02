@@ -33,7 +33,7 @@ export const ContactList = () => {
         {isLoading && !error && (
           <p className={css.request}>Request in progress...</p>
         )}
-        <ul>
+        <ul className={css.contacsList}>
           <Filter />
           {filteredContacts.length > 0 ? (
             filteredContacts.map(contact => (

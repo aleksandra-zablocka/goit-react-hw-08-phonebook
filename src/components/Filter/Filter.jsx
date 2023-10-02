@@ -19,10 +19,8 @@ const Filter = () => {
         type="text"
         name="filter"
         value={filter}
-        pattern="^[A-Za-z.'\- ]+$"
-        title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
         onChange={handleChange}
-        placeholder="Search for contacts"
+        placeholder="Search by name"
       />
     </div>
   );

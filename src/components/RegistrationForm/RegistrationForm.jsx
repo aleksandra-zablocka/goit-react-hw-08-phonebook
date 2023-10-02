@@ -15,15 +15,15 @@ const RegistrationForm = () => {
       return;
     }
 
-    // const password = form.elements.password.value;
-    // const hasUpperCase = /[A-Z]/.test(password);
-    // const hasDigit = /[0-9]/.test(password);
-    // const hasSpecialChar = /[!@#$%^&*()+=._-]/.test(password);
+    const password = form.elements.password.value;
+    const hasUpperCase = /[A-Z]/.test(password);
+    const hasDigit = /[0-9]/.test(password);
+    const hasSpecialChar = /[!@#$%^&*()+=._-]/.test(password);
 
-    // if (password.length < 6 || !hasUpperCase || !hasDigit || !hasSpecialChar) {
-    //   toast.error('Please enter correct password');
-    //   return;
-    // }
+    if (password.length < 6 || !hasUpperCase || !hasDigit || !hasSpecialChar) {
+      toast.error('Your password does not meet requirements');
+      return;
+    }
 
     dispatch(
       register({
@@ -53,7 +53,7 @@ const RegistrationForm = () => {
         Repeat Password
         <input className={css.input} type="password" name="passwordRepeated" />
       </label>
-      {/* <div className={css.requirements}>
+      <div className={css.requirements}>
         <ul>
           <b>Password must contain at least:</b>
           <li>6 characters</li>
@@ -62,7 +62,7 @@ const RegistrationForm = () => {
           <li>one digit (number)</li>
           <li>one special character (e.g., !@#$%)</li>
         </ul>
-      </div> */}
+      </div>
       <button className={css.btnRegister} type="submit">
         Register
       </button>

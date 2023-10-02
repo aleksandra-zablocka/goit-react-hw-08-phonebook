@@ -5,7 +5,7 @@
   align-items: center;
   }
 
-ul {
+  .contacsList {
   margin: 10px;
   gap: 10px;
   font-size: 16px;
