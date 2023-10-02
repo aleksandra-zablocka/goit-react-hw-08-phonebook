@@ -14,7 +14,7 @@
 }
 
 h1 {
-  color: rgb(139, 224, 163);
+  color: rgb(21, 208, 74);
 }
 
 span {
@@ -27,15 +27,15 @@ span {
 }
 
 p {
-    color: rgb(16, 128, 47);
+  color: rgb(16, 128, 47);
 }
 
 .btnHome {
   font-size: 14px;
   border-radius: 10px;
   color: white;
-  background-color: rgb(139, 224, 163);
-  margin-top: 10px;
+  background-color: rgb(21, 208, 74);
+  margin-top: 15px;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -58,7 +58,6 @@ p {
   border: double green 4px;
   color: white;
   text-align: center;
-  /* margin-top: 30px; */
   font-size: 14px;
   border-radius: 15px;
   background-color: white;
@@ -73,7 +72,7 @@ p {
   text-align: center;
   font-size: 14px;
   border-radius: 15px;
-  background-color: rgba(16, 128, 48, 0.792);
+  background-color: rgb(20, 140, 54);
   width: 150px;
   height: 250px;
   transform: rotate(-10deg);
@@ -91,7 +90,7 @@ p {
   font-size: 14px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: rgba(16, 128, 48, 0.792);
+  background-color: rgb(20, 140, 54);
   width: 150px;
   height: 30%;
 }
@@ -119,9 +118,9 @@ h3 {
 .addIcon {
   fill: white;
   width: 20px;
-  }
+}
 
-  .contactsIcon {
-    fill: rgb(16, 128, 47);
-    width: 20px;
-    }
+.contactsIcon {
+  fill: rgb(16, 128, 47);
+  width: 20px;
+}

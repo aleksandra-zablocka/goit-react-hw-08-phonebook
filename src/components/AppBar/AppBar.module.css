@@ -4,10 +4,15 @@ body {
 }
 
 .header {
-  width: 680px;
+  width: 100vw;
+  height: 45px;
   display: flex;
+  background-color: rgba(234, 234, 234, 0.829);
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
-  border-bottom: 1px solid rgba(16, 128, 48, 0.792);
-}
+  border-bottom: 1px solid rgba(16, 128, 48, 0.388);
+  position: fixed; 
+  top: 0;
+  left: 0;
+  }
