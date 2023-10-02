@@ -27,7 +27,7 @@ export default function App() {
 
   return isRefreshing ? (
     <div className={css.loaderContainer}>
-     <BarLoader color="rgb(21, 208, 74)"/>
+     <BarLoader color="rgb(1, 117, 34)"/>
       <p className={css.refreshing}>Refreshing user...</p>
     </div>
   ) : (

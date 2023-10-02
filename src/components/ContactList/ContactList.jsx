@@ -8,6 +8,7 @@ import {
 } from 'redux/contacts/selectors';
 import Filter from 'components/Filter/Filter';
 import ContactEl from 'components/ContactEl/ContactEl';
+import { BarLoader } from 'react-spinners';
 
 export const ContactList = () => {
   const contacts = useSelector(selectContacts);
@@ -31,8 +32,11 @@ export const ContactList = () => {
       <div className={css.contactList}>
         <h2>Contact List</h2>
         {isLoading && !error && (
-          <p className={css.request}>Request in progress...</p>
-        )}
+          <div className={css.loaderContainer}>
+          <BarLoader color="rgb(1, 117, 34)"/>
+           <p className={css.request}>Request in progress...</p>
+         </div>
+                  )}
         <ul className={css.contacsList}>
           <Filter />
           {filteredContacts.length > 0 ? (
