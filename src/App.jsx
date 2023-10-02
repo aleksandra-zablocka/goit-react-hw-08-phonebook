@@ -7,6 +7,8 @@ import { PrivateRoute } from 'components/PrivateRoute';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { refreshUser } from 'redux/auth/operations.js';
+import { BarLoader } from 'react-spinners';
+import css from './App.module.css'
 
 const HomePage = React.lazy(() => import('./pages/Home/Home.jsx'));
 const LoginPage = React.lazy(() => import('./pages/Login/Login.jsx'));
@@ -24,7 +26,10 @@ export default function App() {
   }, [dispatch]);
 
   return isRefreshing ? (
-    <b>Refreshing user...</b>
+    <div className={css.loaderContainer}>
+     <BarLoader color="rgb(21, 208, 74)"/>
+      <p className={css.refreshing}>Refreshing user...</p>
+    </div>
   ) : (
     <Routes>
       <Route path="/" element={<Layout />}>

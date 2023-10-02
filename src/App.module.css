@@ -1,0 +1,12 @@
+.loaderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.refreshing {
+  color: rgb(21, 208, 74);
+}
+
