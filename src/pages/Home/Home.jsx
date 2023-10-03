@@ -36,7 +36,7 @@ const Home = () => {
             <br />
             <p>Name</p>
             <p>Number</p>
-            <button className={css.btnHome}>Add</button>
+            <button className={css.btnHome2}>Add</button>
           </div>
           <div className={css.phone2}>
             <div className={css.details2}>
