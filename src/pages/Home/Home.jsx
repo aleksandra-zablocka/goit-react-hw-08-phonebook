@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <Helmet>
         <title>Home</title>
-      </Helmet>
+       </Helmet>
       <div className={css.home}>
         <h1>
           Welcome to <span>Keep In Touch!</span>
