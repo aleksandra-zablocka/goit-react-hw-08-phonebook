@@ -18,11 +18,11 @@ const Home = () => {
           The best app to keep all your contacts in one place
         </p>
         <div className={css.buttons}>
-          <Link to="/login">
-            <button className={css.btnHome}>Log In</button>
+          <Link className={css.btnHome} to="/login">
+            Log In
           </Link>
-          <Link to="/register">
-            <button className={css.btnHome}>Register</button>
+          <Link className={css.btnHome} to="/register">
+           Register
           </Link>
         </div>
         <div className={css.phones}>
