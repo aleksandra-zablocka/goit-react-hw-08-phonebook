@@ -8,7 +8,7 @@ keep in touch with your friends!
 
 ### Main page
 
-Enjoy a user-friendly design and have a brief view of how the app works
+Enjoy a user-friendly design and take a brief look at how the app works
 ![Main page](https://i.ibb.co/44dvzdx/app.jpg 'Main Page')
 
 ### Register/Log in
